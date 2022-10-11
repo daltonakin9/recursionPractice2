@@ -14,7 +14,10 @@ reverse(""); // ""
 
 
 function reverse(str) {
-  // Your code here
+  if (str.length === 0) return ""
+  const first = str[0]
+  const step = str.slice(1)
+  return reverse(step) + first
 }
 
 
